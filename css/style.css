@@ -1,0 +1,263 @@
+#wk-donation-form .form-paymentmethodtype .radio label {
+    width: 100%;
+    display: block;
+}
+
+/*
+#wk-donation-form input[type=radio] {
+    line-height: normal;
+    border: 1px solid #aaa;
+    background: #fff;
+    color: #555;
+    cursor: pointer;
+    padding: 0!important;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border-color .05s ease-in-out;
+    transition: border-color .05s ease-in-out;
+    border-radius: 4px;
+    margin: -5px 0 0 -32px;
+    border-radius: 50%;
+}
+*/
+
+#wk-donation-form .payment-type-container {
+    margin-bottom: 1.5rem;
+}
+
+#wk-donation-form .pay-icon {
+    display: inline-block;
+    background-size: 51px 32px;
+    width: 51px;
+    height: 32px;
+    margin: 0 0 0 7px;
+}
+#wk-donation-form .icon-mobilepay {
+    background-image: url(../images/mobilepay.png);
+}
+#wk-donation-form .icon-dankort {
+    background-image: url(../images/dankort.png);
+}
+#wk-donation-form .icon-visa {
+    background-image: url(../images/visa.png);
+}
+#wk-donation-form .icon-mastercard {
+    background-image: url(../images/mastercard.png);
+}
+#wk-donation-form .selected {
+    background: #0693e3;
+    color: white;
+}
+.wk-donation-form-wrapper {
+    max-width: 500px;
+    width: 100%;
+}
+#wk-donation-form .form-group.payment-type-container {
+    display: flex;
+}
+#wk-donation-form a {
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    border-width: 0px;
+    border-radius: 70px;
+    font-size: 1.125rem;
+    font-weight: normal;
+    line-height: 2;
+    font-family: inherit;
+    text-decoration: none;
+    flex-basis: 100%;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+#wk-donation-form a#onetime {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#wk-donation-form a#recurring {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#wk-donation-form .form-field {
+    position: relative;
+}
+
+.onetime-fields, .recurring-fields {
+    display: flex;
+}
+.onetime-fields .form-field, .recurring-fields .form-field {
+    flex-basis: 100%;
+}
+
+
+
+#wk-donation-form .donation-amount-container {
+    margin-bottom: 1.5rem;
+}
+
+#wk-donation-form .donation-payment-providers ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#wk-donation-form .donation-payment-providers ul li {
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+#wk-donation-form .donation-payment-providers ul li label {
+    display: flex;
+    justify-content: space-between;
+}
+#wk-donation-form .donation-payment-providers ul li label .pay-icons {
+    float: right;
+}
+#wk-donation-form .form-field span {
+    margin-left: 5px;
+}
+.donation-payment-providers .form-field {
+    display: flex !important;
+    align-items: center;
+}
+
+
+#wk-donation-form .customer-field  {
+    margin-bottom: 1rem;
+}
+#wk-donation-form .customer-field input[type="text"],
+#wk-donation-form .customer-field input[type="phone"],
+#wk-donation-form .customer-field input[type="email"] {
+    width: 100%;
+    min-height: 60px;
+    margin-bottom: 1rem;
+    border-color: #0693e3;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+#wk-donation-form .customer-field  input:required {
+    background: url('../images/required.png') no-repeat right 16px top 16px/12.5px 12.5px;
+    background-color: #fff;
+}
+#wk-donation-form .customer-field > div {
+    position: relative;
+}
+
+#wk-donation-form .customer-field > div label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0693e3;
+}
+
+#fullname .first-name,
+#fullname .last-name {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+}
+#fullname {
+    overflow: hidden;
+}
+#fullname .last-name {
+    margin-right: 0;
+}
+#wk-donation-form .customer-details {
+    margin-top: 1.5rem;
+    display: block;
+}
+#wk-donation-form span.nested-label {
+    text-transform: uppercase;
+}
+#wk-donation-form label.control-label {   
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+#wk-donation-form button#wk-donation-form-submit {
+    background: #0693e3;
+    border: 0px;
+    border-radius: 70px;
+    color: white;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#wk-donation-form .form-group.custom-amount-container {
+    margin-bottom: 1.5rem;
+}
+#wk-donation-form .form-group.custom-amount-container input {
+    border-color: #0693e3;
+}
+
+/**** Radio buttons ****/
+
+#wk-donation-form input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 999999;
+}
+#wk-donation-form  span.checkmark {
+        position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #eee;
+    border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+#wk-donation-form  .form-field:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+#wk-donation-form .form-field input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+#wk-donation-form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+#wk-donation-form .form-field input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+#wk-donation-form .form-field .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+#wk-donation-form .form-field {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
