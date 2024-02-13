@@ -297,6 +297,13 @@ function wk_donation_form_callback(){
 					},
 					success: function(response){
 						console.log(response);
+						//Redirect to the url 
+						result = JSON.parse(response);
+
+						if(result.success == 'success' ){
+							redirect_url = result.data.quickpay_url;
+							window.location.replace(redirect_url);
+						}
 					}
 				});
 
