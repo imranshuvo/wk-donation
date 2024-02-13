@@ -303,6 +303,8 @@ function wk_donation_form_callback(){
 						if(result.success == 'success' ){
 							redirect_url = result.data.quickpay_url;
 							window.location.replace(redirect_url);
+						}else {
+							alert('Noget gik galt. Kontakt os venligst');
 						}
 					}
 				});
